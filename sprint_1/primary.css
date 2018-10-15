@@ -91,3 +91,7 @@ p {
     margin: 16px;
     vertical-align: middle;
 }
+input {
+	text-align: center;
+	width: 60px;
+}
