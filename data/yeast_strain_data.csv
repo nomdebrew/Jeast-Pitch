@@ -23,12 +23,47 @@ wlp033,ale,Klassic Ale,66,74,medium,5,10,66,70
 wlp036,ale,Düsseldorf Alt Ale,65,72,medium,5,10,65,69
 wlp037,ale,Yorkshire Square Ale,68,72,high,8,12,65,70
 wlp038,ale,Manchester Ale,70,74,medium to high,8,12,65,70
-wlp039,,,,,,,,,
-wlp040,,,,,,,,,
-wlp041,,,,,,,,,
-wlp042,,,,,,,,,
-wlp043,,,,,,,,,
-wlp044,,,,,,,,,
-wlp045,,,,,,,,,
-wlp046,,,,,,,,,
-wlp047,,,,,,,,,
+wlp039,ale,East Midlands Ale,73,82,medium to high,5,10,66,70
+wlp041,ale,Pacific Ale,65,70,high,5,10,65,68
+wlp051,ale,California V Ale,70,75,medium to high,8,12,66,70
+wlp059,ale,Melbourne Ale,74,78,medium,,,,
+wlp060,ale,American Ale Blend,72,80,medium,8,12,68,72
+wlp064,ale,Buchner Ale Blend,72,78,medium,8,12,67,72
+wlp066,ale,London Fog Ale,65,70,medium to high,8,12,64,72
+wlp067,ale,Coastal Haze Ale Blend,70,75,medium to low,8,12,68,72
+wlp072,ale,French Ale,68,75,medium to high,5,10,63,73
+wlp073,ale,Artisanal Country Ale,75,80,medium to low,8,12,70,82
+wlp075,ale,Hansen Ale Yeast Blend,75,80,medium to high,10,15,66,70
+wlp076,ale,Sonoma Ale,70,74,medium,5,10,66,70
+wlp080,ale,Cream Ale Yeast Blend,75,80,medium,8,12,65,70
+wlp085,ale,English Ale Yeast Blend,69,76,medium to high,5,10,68,72
+wlp090,ale,San Diego Super Yeast,76,83,medium to high,10,15,65,68
+wlp095,ale,Burlington Ale,73,78,medium,8,12,67,70
+wlp099,ale,Super High Gravity Ale,80,100,medium,15,,65,69
+wlp715,wine,Champagne,75,100,low,15,,70,75
+wlp101,wine,Thai Rice Chong,76,76,,10,15,,
+wlp102,,,,,,,,,
+wlp103,,,,,,,,,
+wlp104,,,,,,,,,
+wlp105,,,,,,,,,
+wlp106,,,,,,,,,
+wlp107,,,,,,,,,
+wlp108,,,,,,,,,
+wlp109,,,,,,,,,
+wlp110,,,,,,,,,
+wlp111,,,,,,,,,
+wlp112,,,,,,,,,
+wlp113,,,,,,,,,
+wlp114,,,,,,,,,
+wlp115,,,,,,,,,
+wlp116,,,,,,,,,
+wlp117,,,,,,,,,
+wlp118,,,,,,,,,
+wlp119,,,,,,,,,
+wlp120,,,,,,,,,
+wlp121,,,,,,,,,
+wlp122,,,,,,,,,
+wlp123,,,,,,,,,
+wlp124,,,,,,,,,
+wlp125,,,,,,,,,
+wlp126,,,,,,,,,
