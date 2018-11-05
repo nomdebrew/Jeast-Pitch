@@ -1,0 +1,34 @@
+product ID,family,name,attenuation low,attenuation high,flocculation,alcohol tol low,alcohol tol high,temp low,temp high
+wlp001,ale,California Ale,73,80,medium,10,15,68,73
+wlp002,ale,English Ale,63,70,very high,5,10,65,68
+wlp003,ale,German Ale II,73,80,medium,5,10,65,70
+wlp004,ale,Irish Ale,69,74,medium to high,8,12,65,68
+wlp005,ale,British Ale,67,74,high,5,10,65,70
+wlp006,ale,Bedford British Ale,72,80,high,5,10,65,70
+wlp007,ale,Dry English Ale,70,80,medium to high,8,12,65,70
+wlp008,ale,East Coast Ale,70,75,medium to low,5,10,68,73
+wlp009,ale,Australian Ale Yeast,70,75,high,5,10,65,70
+wlp011,ale,European Ale,65,70,medium,5,10,65,70
+wlp013,ale,London Ale,67,75,medium,5,10,66,71
+wlp017,ale,Whitbread II Ale,67,73,high,5,10,66,70
+wlp019,ale,California IV Ale,,,,,,,
+wlp022,ale,Essex Ale,71,76,medium to high,5,10,66,70
+wlp023,ale,Burton Ale,69,75,medium,5,10,68,73
+wlp025,ale,Southwold Ale,68,75,medium,5,10,66,69
+wlp026,ale,Premium Bitter Ale,70,75,medium,5,10,67,70
+wlp028,ale,Edinburgh Scottish Ale,70,75,medium,8,12,65,70
+wlp029,ale,German Ale/ Kölsch Yeast,72,78,medium,5,10,65,69
+wlp030,ale,Thames Valley Ale,72,78,high,,,,
+wlp033,ale,Klassic Ale,66,74,medium,5,10,66,70
+wlp036,ale,Düsseldorf Alt Ale,65,72,medium,5,10,65,69
+wlp037,ale,Yorkshire Square Ale,68,72,high,8,12,65,70
+wlp038,ale,Manchester Ale,70,74,medium to high,8,12,65,70
+wlp039,,,,,,,,,
+wlp040,,,,,,,,,
+wlp041,,,,,,,,,
+wlp042,,,,,,,,,
+wlp043,,,,,,,,,
+wlp044,,,,,,,,,
+wlp045,,,,,,,,,
+wlp046,,,,,,,,,
+wlp047,,,,,,,,,
