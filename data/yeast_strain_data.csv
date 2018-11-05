@@ -41,29 +41,44 @@ wlp090,ale,San Diego Super Yeast,76,83,medium to high,10,15,65,68
 wlp095,ale,Burlington Ale,73,78,medium,8,12,67,70
 wlp099,ale,Super High Gravity Ale,80,100,medium,15,,65,69
 wlp715,wine,Champagne,75,100,low,15,,70,75
-wlp101,wine,Thai Rice Chong,76,76,,10,15,,
-wlp102,,,,,,,,,
-wlp103,,,,,,,,,
-wlp104,,,,,,,,,
-wlp105,,,,,,,,,
-wlp106,,,,,,,,,
-wlp107,,,,,,,,,
-wlp108,,,,,,,,,
-wlp109,,,,,,,,,
-wlp110,,,,,,,,,
-wlp111,,,,,,,,,
-wlp112,,,,,,,,,
-wlp113,,,,,,,,,
-wlp114,,,,,,,,,
-wlp115,,,,,,,,,
-wlp116,,,,,,,,,
-wlp117,,,,,,,,,
-wlp118,,,,,,,,,
-wlp119,,,,,,,,,
-wlp120,,,,,,,,,
-wlp121,,,,,,,,,
-wlp122,,,,,,,,,
-wlp123,,,,,,,,,
-wlp124,,,,,,,,,
-wlp125,,,,,,,,,
-wlp126,,,,,,,,,
+wlp780,wine,Thai Rice Chong,76,76,,10,15,,
+wlp800,lager,Pilsner Lager,72,77,medium to high,5,10,50,55
+wlp802,lager,Czech Budejovice Lager,75,80,medium,5,10,50,55
+wlp810,lager,San Francisco Lager,65,70,high,8,12,58,65
+wlp815,lager,Belgian Lager,72,78,medium,5,10,50,55
+wlp820,lager,Oktoberfest/Märzen Lager,65,73,medium,8,12,52,58
+wlp830,lager,German Lager,74,79,medium,5,10,50,55
+wlp833,lager,German Bock Lager,70,76,medium,8,12,48,55
+wlp835,lager,German X Lager,70,76,medium,8,12,50,54
+wlp838,lager,Southern German Lager,68,76,medium to high,5,10,50,55
+wlp840,lager,American Lager,75,80,medium,5,10,50,55
+wlp845,lager,Fast Lager,75,78,,,,,
+wlp850,lager,Copenhagen Lager,72,78,medium,5,10,50,58
+wlp860,lager,Munich Helles Lager,68,72,medium,5,10,48,52
+wlp862,lager,Cry Havoc Lager,66,70,low,5,10,55,58
+wlp885,lager,Zurich Lager,70,80,medium,15,,50,55
+wlp920,lager,Old Bavarian Lager,66,73,medium,8,12,50,55
+wlp925,lager,High Pressure Lager,73,82,medium,5,10,62,68
+wlp940,lager,Mexican Lager,70,78,medium,5,10,55,55
+wlp073,belgian/specialty,Artisanal Country Ale,75,80,medium to low,8,12,70,82
+wlp300,belgian/specialty,Hefeweizen Ale,72,76,low,5,10,68,72
+wlp320,belgian/specialty,American Hefeweizen Ale,70,75,low,5,10,65,69
+wlp351,belgian/specialty,Bavarian Weizen,73,77,low,5,10,66,70
+wlp380,belgian/specialty,Hefeweizen IV Ale,73,80,low,5,10,66,70
+wlp400,belgian/specialty,Belgian Wit Ale,74,78,medium to low,5,10,67,74
+wlp410,belgian/specialty,Belgian Wit II Ale,70,75,medium to low,5,10,67,74
+wlp500,belgian/specialty,Monastery Ale,75,80,medium to low,10,15,65,72
+wlp510,belgian/specialty,Bastogne Belgian Ale,74,80,medium,10,15,66,72
+wlp515,belgian/specialty,Antwerp Ale,73,80,medium,5,10,67,70
+wlp530,belgian/specialty,Abbey Ale,75,80,medium to high,10,15,66,72
+wlp540,belgian/specialty,Abbey IV Ale ,74,82,medium,10,15,66,72
+wlp545,belgian/specialty,Belgian Strong Ale,78,85,medium,10,15,66,72
+wlp550,belgian/specialty,Belgian Ale,78,85,medium,8,12,68,78
+wlp564,belgian/specialty,Leeuwenhoek Saison Blend,76,82,low,10,15,66,75
+wlp565,belgian/specialty,Belgian Saison I,65,75,medium,5,10,68,75
+wlp566,belgian/specialty,Belgian Saison II Ale,78,85,medium,5,10,68,78
+wlp568,belgian/specialty,Belgian Style Saison Blend,70,80,medium,5,10,70,80
+wlp570,belgian/specialty,Belgian Golden Ale,73,78,low,10,15,68,75
+wlp575,belgian/specialty,Belgian Style Ale Blend,74,80,medium,8,12,68,75
+wlp590,belgian/specialty,French Saison Ale,73,80,medium,5,10,69,75
+wlp611,belgian/specialty,New Nordic Ale,65,75,medium to low,0,4.8,,
