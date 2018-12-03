@@ -19,25 +19,76 @@
 
 	<div class="content">
 		<h1>Cell Counting</h1>
-		<h3>Live Cells</h3>
-			<p><input type="text" name="live1" value="25">
-			<input type="text" name="live2" value="30"></p>
-			<p>&emsp;&emsp;&emsp;&emsp;<input type="text" name="live3" value="22"></p>
-			<p><input type="text" name="live4" value="28">
-			<input type="text" name="live5" value="19"></p>
-		</p>
-		<h3>Dead Cells</h3>
-			<p><input type="text" name="dead1" value="2">
-			<input type="text" name="dead2" value="3"></p>
-			<p>&emsp;&emsp;&emsp;&emsp;<input type="text" name="dead3" value="1"></p>
-			<p><input type="text" name="dead4" value="0">
-			<input type="text" name="dead5" value="1"></p>
-		<p>&emsp;&emsp;&emsp;&emsp;<input type="submit" value="Submit"></p>
+		<div style="float:left; padding: 40px;">
+			<h3>Live Cells</h3>
+				<p><input type="number" id="live1">
+				<input type="number" id="live2"></p>
+				<p>&emsp;&emsp;&emsp;&emsp;<input type="number" id="live3"></p>
+				<p><input type="number" id="live4">
+				<input type="number" id="live5"></p>
+			</p>
+			<h3>Dead Cells</h3>
+				<p><input type="number" id="dead1">
+				<input type="number" id="dead2"></p>
+				<p>&emsp;&emsp;&emsp;&emsp;<input type="number" id="dead3"></p>
+				<p><input type="number" id="dead4">
+				<input type="number" id="dead5"></p>
+		</div>
+		<div style="float:left; padding: 40px;">
+			<h3>Sample Volumes</h3>
+			<p>yeast sample volume <input type="number" id="vol1">mL</p>
+			<p>total sample volume <input type="number" id="vol2">mL</p>
+			<p>yeast volume <input type="number" id="vol3">bbl</p>
+			<p>wort volume <input type="number" id="vol4">bbl</p>
+			<p>wort gravity <input type="number" id="vol5">°P</p>
+			<p>ale=1, lager=2, belgian=.75 <input type="number" id="vol6"></p>
+		</div>
+		<div style="float:left; padding: 40px;">
+		<p>&emsp;&emsp;&emsp;<button onclick="calculate()">Submit</button></p>
 		
-		<p>Calculations</p>
-			<p><input type="text" value="3.25"> x 10 ^ <input type="text" value="12"> cells/mL</p>
-			<p><input type="text" value="94.3">% Viability</p>
+			<h3>Calculations</h3>
+			<p><span id="calc1"></span> cells/mL</p>
+			<p><span id="calc2"></span>% Viability</p>
+			<p>target yeast vol. <span id="calc3"></span> bbl</p>
+		</div>
 
+		<script type="text/javascript">
+		function calculate() {
+			var l1 = document.getElementById('live1').value;
+			var l2 = document.getElementById('live2').value;
+			var l3 = document.getElementById('live3').value;
+			var l4 = document.getElementById('live4').value;
+			var l5 = document.getElementById('live5').value;
+			
+			var d1 = document.getElementById('dead1').value;
+			var d2 = document.getElementById('dead2').value;
+			var d3 = document.getElementById('dead3').value;
+			var d4 = document.getElementById('dead4').value;
+			var d5 = document.getElementById('dead5').value;
+
+			var v1 = document.getElementById('vol1').value;
+			var v2 = document.getElementById('vol2').value;
+			var v3 = document.getElementById('vol3').value;
+			var v4 = document.getElementById('vol4').value;
+			var v5 = document.getElementById('vol5').value;
+
+			var c1 = document.getElementById('calc1');
+			var c2 = document.getElementById('calc2');
+			var c3 = document.getElementById('calc3');
+			
+			var totalLive = +l1 + +l2 + +l3 + +l4 + +l5;
+			var totalDead = +d1 + +d2 + +d3 + +d4 + +d5;
+			var dilution = +vol1 / +vol2;
+			var density = totalLive * dilution * 50000;
+			var cellsNeeded = +vol5*(0.0682*+vol5+0.2237)*+vol6*10**6*+vol4*(31*3785.41);
+			var slurry =(cellsNeeded/(density*3785.41))/31;
+
+			c1.innerHTML = density.toExponential(2);
+			c2.innerHTML = (totalLive/(totalLive + totalDead) * 100).toFixed(2);
+			c3.innerHTML = slurry;
+            	}
+
+		</script>
 	</div>
 </div>
 

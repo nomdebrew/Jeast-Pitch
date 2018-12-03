@@ -1,0 +1,19 @@
+<html>
+<body>
+This: <input type="number" id="foo" value="" /><br/>
+Plus This: <input type="number" id="zoo" value="" /><br/>
+<button onclick="getValue()">Add Numbers</button>
+<h2>Equals This</h2>
+<p id="boo"></p>
+
+<script>
+function getValue(){
+ var y = document.getElementById('boo');
+ var x = document.getElementById('foo').value;
+ var z = document.getElementById('zoo').value;
+ var a = +x + +z;
+ y.innerHTML=a;
+}</script>
+
+</body>
+</html>
