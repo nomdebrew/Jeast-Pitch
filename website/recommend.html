@@ -19,14 +19,118 @@
 
 	<div class="content">
 		<h1>Buying recomendtions</h1>
-		<p>Target batch volume <input type="text" name="input_1" value="16"> bbl</p>
-		<p>Target batch fermentables <input type="text" name="input_2" value="10.2"> °P</p>
-		<p>Days to propagate <input type="text" name="input_4" value="0"> (for direct pitches select 0)</p>
-		<p>Yeast strain family <input type="text" name="input_5" value="Ale"> for <input type="text" name="input_5" value="WLP001"></p>
-		<p><input type="submit" value="Submit"></p>
+		<p>Target batch volume <input type="number" id="input_1" value="16"> bbl</p>
+		<p>Target batch fermentables <input type="number" id="input_2" value="10.2"> °P</p>
+		<p>Days to propagate <input type="number" id="input_3" value="0"> (for direct pitches select 0)</p>
+		<p>Yeast strain family <input type="number" id="input_4" value="1"> for <input type="text" id="input_5" value="WLP001"></p>
+		
+		<p><button onclick="recommend()">Submit</button></p>
 		<br>
-		<p>Given <input type="text" name="input_4" value="0"> days to propagate <input type="text" name="input_4" value="2"> <input type="text" name="input_4" value="L"> of yeast should be purchased</p>
+		<span type="number" id="out_1" ></span> <span type="text" id="out_2"></span> of yeast should be purchased</p>
 	</div>
+
+	<script>
+	function recommend() {
+		var in1 = document.getElementById('input_1').value;
+		var in2 = document.getElementById('input_2').value;
+		var in3 = document.getElementById('input_3').value;
+		var in4 = document.getElementById('input_4').value;
+		var in5 = document.getElementById('input_5').value;
+
+		var out1 = document.getElementById('out_1');
+		var out2 = document.getElementById('out_2');
+				
+		
+		var strain = in4;		
+		var vol;
+
+		if (in2 <=12) {
+			if (in1 <= 2.5) {
+				vol = 0.5;
+			} else if (in1 <= 5) {
+				vol = 1.0;
+			} else if (in1 <= 7) {
+				vol = 1.5;
+			} else if (in1 <= 10) {
+				vol = 2.0;
+			} else if (in1 <= 15) {
+				vol = 3.0;
+			} else if (in1 <= 20) {
+				vol = 4.0;
+			} else if (in1 <= 30) {
+				vol = 6.0;
+			} else if (in1 <= 40) {
+				vol = 8.0;
+			} else if (in1 <= 50) {
+				vol = 10.0;
+			} else {		
+				vol = 20.0;
+			}
+		} else if (in2 <=16.5) {
+			if (in1 <= 2.5) {
+				vol = 0.75;
+			} else if (in1 <= 5) {
+				vol = 1.5;
+			} else if (in1 <= 7) {
+				vol = 2.0;
+			} else if (in1 <= 10) {
+				vol = 3.0;
+			} else if (in1 <= 15) {
+				vol = 4.0;
+			} else if (in1 <= 20) {
+				vol = 6.0;
+			} else if (in1 <= 30) {
+				vol = 8.0;
+			} else if (in1 <= 40) {
+				vol = 12.0;
+			} else if (in1 <= 50) {
+				vol = 14.0;
+			} else {		
+				vol = 30.0;
+			}
+		} else{
+			if (in1 <= 2.5) {
+				vol = 1.0;
+			} else if (in1 <= 5) {
+				vol = 2.0;
+			} else if (in1 <= 7) {
+				vol = 3.0;
+			} else if (in1 <= 10) {
+				vol = 4.0;
+			} else if (in1 <= 15) {
+				vol = 6.0;
+			} else if (in1 <= 20) {
+				vol = 8.0;
+			} else if (in1 <= 30) {
+				vol = 12.0;
+			} else if (in1 <= 40) {
+				vol = 16.0;
+			} else if (in1 <= 50) {
+				vol = 20.0;
+			} else {		
+				vol = 40.0;
+			}
+		}
+
+
+		if (strain == 2) {
+			vol = vol/(5**(in3/2));
+		} else if (strain == 3) {
+			vol = vol/(10**in3);
+		} else {
+			vol = vol/(8**in3);
+		}
+
+		if (vol < 1) {
+			vol = vol *1000;
+			out2.innerHTML = "mL";
+		} else {
+			out2.innerHTML = "L";
+		}
+		out1.innerHTML = vol.toFixed(1);
+
+	}
+	</script>
 </div>
 
 </body>
