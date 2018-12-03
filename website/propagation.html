@@ -35,7 +35,7 @@
 			<h3>Output Information</h3>
 			<div id="propagation"></div>
 
-					<p>Yeast is ready to pitch check cell count one final time</p>
+			<p><a href="https://wyeastlab.com/propagation">How to count yeast</a></p>
 		</div>
 		
 	</div>
@@ -43,6 +43,12 @@
 	<script type="text/javascript">
 	function update() {
    	var div = document.createElement('div');
+	var i = 0;
+	var water_seed = 10;
+	var malt_seed = 15;
+	var yeast_seed = 1;
+	
+
 	var rand1 = Math.floor(Math.random() * 15);
 	var rand2 = Math.floor(Math.random() * 12);	
 	var rand3 = Math.floor(Math.random() * 5);
@@ -52,16 +58,28 @@
 	var in3 = document.getElementById('input_3').value;
 	var in4 = document.getElementById('input_4').value;
 	var in5 = document.getElementById('input_5').value;
-
-    	div.innerHTML =
-        '<h4>Step up</h4>\
-	<p><span>'+rand1+'</span><span>'+' L'+'</span> of water</p>\
-	<p><span>'+rand2+'</span><span>'+' lbs'+'</span> of dry malt extract</p>\
-	<p><span>'+rand3+'</span><span>'+' g'+'</span> yeast nutrient</p>';
-
-
-	document.getElementById('propagation').appendChild(div);
 	
+	var vol = in1;
+	var strain = 1;
+	if ( in5 == 2) {
+		strain = 12;
+	} else if ( in5 == 1) {
+		strain = 5;
+	} else {
+		strain = 8;
+	}
+
+	while (vol < in4) {
+	    	div.innerHTML +=
+		'<h4>Step up '+i+'</h4>\
+		<p><span>'+water_seed*(strain**i)+'</span><span>'+' L'+'</span> of water</p>\
+		<p><span>'+malt_seed*(strain**i)+'</span><span>'+' lbs'+'</span> of dry malt extract</p>\
+		<p><span>'+yeast_seed*(strain**i)+'</span><span>'+' g'+'</span> yeast nutrient</p>';
+
+		document.getElementById('propagation').appendChild(div);
+		vol = vol*strain;
+		i +=1;
+	}	
 	
 
 	out1.innerHTML = rand1;
