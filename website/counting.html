@@ -19,7 +19,7 @@
 
 	<div class="content">
 		<h1>Cell Counting</h1>
-		<div style="float:left; padding: 40px;">
+		<div style="float:left; padding: 40px; color: black;">
 			<h3>Live Cells</h3>
 				<p><input type="number" id="live1">
 				<input type="number" id="live2"></p>
@@ -34,7 +34,7 @@
 				<p><input type="number" id="dead4">
 				<input type="number" id="dead5"></p>
 		</div>
-		<div style="float:left; padding: 40px;">
+		<div style="float:left; padding: 40px; color: black;">
 			<h3>Sample Volumes</h3>
 			<p>yeast sample volume <input type="number" id="vol1">mL</p>
 			<p>total sample volume <input type="number" id="vol2">mL</p>
@@ -43,7 +43,7 @@
 			<p>wort gravity <input type="number" id="vol5">°P</p>
 			<p>ale=1, lager=2, belgian=.75 <input type="number" id="vol6"></p>
 		</div>
-		<div style="float:left; padding: 40px;">
+		<div style="float:left; padding: 40px; color: black;">
 		<p>&emsp;&emsp;&emsp;<button onclick="calculate()">Submit</button></p>
 		
 			<h3>Calculations</h3>
@@ -51,7 +51,6 @@
 			<p><span id="calc2"></span>% Viability</p>
 			<p>target yeast vol. <span id="calc3"></span> bbl</p>
 		</div>
-
 		<script type="text/javascript">
 		function calculate() {
 			var l1 = document.getElementById('live1').value;
